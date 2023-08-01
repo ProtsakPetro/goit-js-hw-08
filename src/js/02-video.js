@@ -20,8 +20,9 @@ player.on(
   }, 1000)
 );
 function getSavedCurrentTime() {
-  const savedCurrentTime =
-    localStorage.getItem('videoplayer-current-time') || 0;
+  const savedCurrentTime = localStorage.getItem(
+    'videoplayer-current-time' || 0
+  );
   if (savedCurrentTime) {
     return Number(savedCurrentTime);
   }
